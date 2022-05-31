@@ -21,6 +21,7 @@ function render(props: { container?: HTMLElement }) {
 
 // 使用 webpack 运行时 publicPath 配置
 if (window.__POWERED_BY_QIANKUN__) {
+  // @ts-ignore
   __webpack_public_path__ = window.__INJECTED_PUBLIC_PATH_BY_QIANKUN__;
 }
 
